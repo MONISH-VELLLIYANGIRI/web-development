@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple calculator</title>
+</head>
+<style>
+    #o{
+        margin-left :500px;
+        margin-top:100px;
+    }
+    .i
+    {
+        width:50px;
+        height:50px;
+        background-color: beige;
+    }
+    #result
+    {
+        width:150px;
+        height: 45px;
+        margin-bottom:10px;
+    }
+    body{
+        background-image: url(digits-7708860_1280.jpg);
+    }
+
+</style>
+<body>
+    <div id="o">
+        <h1 style="color: black;"><i>Simple calculator</i></h1>
+        <form>
+            <input type="text" id="result" disabled style="background-color: gray;">
+            <input type="button" value="C" class="i" onclick="clearu()" style="background-color: brown;"><br>
+            <input type="button" value="1" class="i" onclick="append('1')">
+            <input type="button" value="2" class="i" onclick="append('2')">
+            <input type="button" value="3" class="i" onclick="append('3')" >
+            <input type="button" value="+" class="i" onclick="append('+')"><br>
+            <input type="button" value="4" class="i" onclick="append('4')">
+            <input type="button" value="5" class="i" onclick="append('5')">
+            <input type="button" value="6" class="i" onclick="append('6')">
+            <input type="button" value="-" class="i" onclick="append('-')"><br>
+            <input type="button" value="7" class="i" onclick="append('7')">
+            <input type="button" value="8" class="i" onclick="append('8')">
+            <input type="button" value="9" class="i" onclick="append('9')">
+            <input type="button" value="*" class="i" onclick="append('*')"><br>
+            <input type="button" value="." class="i" onclick="append('.')">
+            <input type="button" value="0" class="i"onclick="append('0')">
+            <input type="button" value="=" class="i" onclick="calci()">
+            <input type="button" value="/" class="i"onclick="append('/')"><br>
+
+        </form>
+    </div>
+</body>
+<script>
+    function append(value)
+    {
+        document.getElementById("result").value += value;
+
+    }
+    function clearu()
+    {
+        document.getElementById("result").value = '';
+
+    }
+    function calci()
+    {
+        const result=eval(document.getElementById("result").value)
+        document.getElementById("result").value=result;
+    }
+</script>
+            
+            
