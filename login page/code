@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Login page</title>
+</head>
+<style>
+    div.center
+    {
+      text-align: center;
+      border-style:solid;
+      border-radius:25px;
+      margin-left: 400px;
+      margin-right: 400px;
+      margin-top:100px;
+      background-color:rgb(42, 132, 132);
+    }
+    p.center
+    {
+       color: rgb(51, 154, 188);
+    }
+    #log
+    {
+        background-color:blue;
+        border-style:solid;
+        border-radius: 25px;
+        width: 200px;
+    
+    
+    }
+    body{
+        background-color: rgb(28, 132, 161);
+    }
+    #uname
+    {
+        border-radius: 25px;
+        border-style:solid;
+    }
+    #password
+    {
+        border-radius:25px;
+        border-style:solid;
+    }
+    #hl
+    {
+        background-image:url(pexels-jplenio-1103970.jpg);
+    }
+
+  </style>
+<body>
+    <div class="center">
+    <h1 id="hl"><i>Monogram</i></h1>
+    <p class="center">Login page</p>
+    <form>
+        <label for="uname">username:</label><br>
+        <input type="text" id="uname" name="uname"  ><br>
+        <label for="password">password:</label><br>
+        <input type="text" id="password" name="password" ><br>
+        <br><input type="submit" value="Log in" id="log">
+
+    </form>
+    <h1>----or----</h1>
+    <a href="https://www.facebook.com/login/">Login with facebook</a><br>
+    <a href="Untitled-1.1.html">Forgot password?</a>
+    </div>
+
+</body>
